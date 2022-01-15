@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoe to deal image size in CSS</title>
+    <style>
+        .image-issue {
+
+            /* card image size handling */
+            height: 230px;
+            object-fit: cover;
+
+            /* cenetr an image */
+            width: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+            /* or we can use this method */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div><img src="" alt="" class="image-issue"></div>
+    <!-- 
+        1. image size handling: object fit --css property w3School
+
+        2. title handling : ${title.slice(31)...}
+
+        3. position Center an image by using display block, width, margin auto 
+        or we can handle it by using display flex 
+        justify, align itemscenter
+
+        4. Flex related details on w3schools website
+
+        5. Hero Image w3school website 
+            background position property in w3school
+        
+        6. progress bar using bootsrap 
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+</div> 
+     -->
+
+    <!--
+        <div class="progress d-none mt-5" id="progress-div">
+        <div id="progressBar"
+        class="progress-bar"
+        role="progressbar"
+        style="width: 25%"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"> </div>
+        </div> 
+-->
+
+    <!-- 
+        document.getElementById("progress-div").classList.remove("d-none");
+        p.style.width = "50%";
+        p.setAttribute("aria-valuenow", "50");
+        p.innerText = "50%";
+
+  -->
+
+    <!-- 
+      
+   -->
+
+</body>
+
+</html>

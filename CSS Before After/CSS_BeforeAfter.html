@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Before After</title>
+    <style>
+        h2,
+        p {
+            text-align: center;
+        }
+
+        .img-div {
+            display: inline-block;
+            position: relative;
+        }
+
+        .img-div::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 50%;
+            width: 100%;
+            background-color: #86B9C8;
+            transition: .5s;
+        }
+
+        .img-div::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 50%;
+            width: 100%;
+            background-color: #86B9C8;
+            transition: .5s;
+        }
+
+        .img-div:hover::before {
+            height: 0;
+            transition: .5s;
+        }
+
+        .img-div:hover::after {
+            height: 0;
+            transition: .5s;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Pseudo Elements :: (before, after) Effect</h2>
+
+    <div class="img-div">
+        <img style="width: 100%;" src="../images/river.jpg" alt="">
+    </div>
+    <p><small>Just hover over the image blue backgound.</small></p>
+</body>
+
+</html>
